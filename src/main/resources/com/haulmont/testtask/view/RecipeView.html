@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:true,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+  <link rel="stylesheet" type="text/css" href="mystylesheet.css"/>
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-absolute-layout>
+    <vaadin-button plain-text _id="addIButton" :top="578px" :left="0px">
+      Добавить рецепт 
+    </vaadin-button>
+    <vaadin-grid width-full height="384px" data-item-type="com.haulmont.testtask.model.Recipe" _id="grid" :top="194px" :left="0px">
+     <table>
+      <colgroup>
+       <col column-id="description" sortable>
+       <col column-id="dateOfCreation" sortable>
+       <col column-id="priorityR" sortable>
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text column-ids="description">Description</th>
+        <th plain-text column-ids="dateOfCreation">DateOfCreation</th>
+        <th plain-text column-ids="priorityR">Priority</th>
+       </tr>
+      </thead>
+      <tbody></tbody>
+     </table>
+    </vaadin-grid>
+    <vaadin-button width="224px" plain-text _id="recipeFilterButton" :top="145px" :left="586px">
+      Применить 
+    </vaadin-button>
+    <vaadin-combo-box caption="Приоритет" data-item-type="java.lang.String" _id="priorityFilterCombobox" :top="37px" :left="603px">
+     <option item="Option1">Option 1</option>
+     <option item="Option2">Option 2</option>
+     <option item="Option3">Option 3</option>
+    </vaadin-combo-box>
+    <vaadin-text-area caption="Описание" width="329px" height="161px" _id="descriptionFilterTextArea" :top="21px" :left="0px"></vaadin-text-area>
+    <vaadin-text-field caption="Имя" width="230px" _id="filterNameField" :top="37px" :left="342px"></vaadin-text-field>
+    <vaadin-label plain-text :top="0px" :left="362px">
+      ФИО Пациента 
+    </vaadin-label>
+    <vaadin-text-field caption="Фамилия" width="230px" _id="filterSurnameField" :top="91px" :left="342px"></vaadin-text-field>
+    <vaadin-text-field caption="Отчество" width="230px" _id="filterPatronymicField" :top="145px" :left="342px"></vaadin-text-field>
+    <vaadin-button visible="false" width="245px" plain-text _id="showRecipesButton" :top="578px" :left="161px">
+      Вернуться к полной таблице 
+    </vaadin-button>
+   </vaadin-absolute-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

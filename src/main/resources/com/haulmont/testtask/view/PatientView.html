@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:true,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+     <link rel="stylesheet" type="text/css" href="mystylesheet.css"/>
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-absolute-layout>
+    <vaadin-button plain-text _id="addPatientButton" :top="400px" :left="0px">
+      Добавить пациента 
+    </vaadin-button>
+    <vaadin-grid width-full data-item-type="com.haulmont.testtask.model.Patient" _id="grid" :top="0px" :left="0px">
+     <table>
+      <colgroup>
+       <col column-id="name" sortable>
+       <col column-id="surname" sortable>
+       <col column-id="phone" sortable>
+       <col column-id="patronymic" sortable>
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text column-ids="name">Name</th>
+        <th plain-text column-ids="surname">Surname</th>
+        <th plain-text column-ids="phone">Phone</th>
+        <th plain-text column-ids="patronymic">Patronymic</th>
+       </tr>
+      </thead>
+      <tbody></tbody>
+     </table>
+    </vaadin-grid>
+   </vaadin-absolute-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

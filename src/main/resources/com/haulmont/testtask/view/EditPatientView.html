@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:true,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+     <link rel="stylesheet" type="text/css" href="mystylesheet.css"/>
+ </head>
+ <body>
+  <vaadin-absolute-layout caption="Редактирование пациента" width="452px" height="411px" margin="">
+   <vaadin-absolute-layout caption-as-html width="390px" height="330px" margin="" _id="editLayout" :top="40px" :left="22px">
+    <vaadin-text-field caption-as-html caption="Введите имя:" width="289px" _id="nameField" :top="49px" :left="67px"></vaadin-text-field>
+    <vaadin-text-field caption-as-html caption="Введите фамилию:" width="289px" _id="surnameField" :top="104px" :left="67px"></vaadin-text-field>
+    <vaadin-text-field caption-as-html caption="Введите отчество:" width="289px" height="37px" _id="patronymicField" :top="159px" :left="67px"></vaadin-text-field>
+    <vaadin-text-field caption-as-html caption="Введите телефон:" width="289px" _id="phoneField" :top="219px" :left="67px"></vaadin-text-field>
+    <vaadin-button width="117px" plain-text _id="editButton" :top="272px" :left="67px">
+      Ок 
+    </vaadin-button>
+    <vaadin-button width="134px" plain-text _id="cancelButton" :top="272px" :left="222px">
+      Отмена 
+    </vaadin-button>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>

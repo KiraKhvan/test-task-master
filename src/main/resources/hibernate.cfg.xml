@@ -1,0 +1,34 @@
+<hibernate-configuration>
+
+<session-factory>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+
+    <!-- Database Connection settings -->
+    <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+    <property name="connection.url">jdbc:hsqldb:file:myDb;shutdown=true;hsqldb.write_delay=false;</property>
+    <property name="connection.username">sa</property>
+    <property name="connection.password"></property>
+    <!-- Enable the logging of all the generated SQL statements to the console -->
+    <property name="show_sql">true</property>
+
+    <!-- Format the generated SQL statement to make it more readable, -->
+    <property name="format_sql">false</property>
+
+    <!-- Hibernate will put comments inside all generated SQL statements to
+     hint what’s the generated SQL trying to do -->
+    <property name="use_sql_comments">false</property>
+
+    <!-- This property makes Hibernate generate the appropriate SQL for the
+     chosen database. -->
+    <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+
+    <!-- mappings for annotated classes -->
+    <mapping class="com.haulmont.testtask.model.Recipe" />
+    <mapping class="com.haulmont.testtask.model.Patient" />
+    <mapping class="com.haulmont.testtask.model.Doctor" />
+
+
+
+</session-factory>
+
+</hibernate-configuration>

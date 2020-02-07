@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:true,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+     <link rel="stylesheet" type="text/css" href="mystylesheet.css"/>
+ </head>
+ <body>
+  <vaadin-absolute-layout caption="Добавление нового рецепта" width="517px" height="472px">
+   <vaadin-text-area caption="Рецепт" width="500px" height="116px" _id="descriptionTextArea" :top="233px" :left="15px"></vaadin-text-area>
+   <vaadin-combo-box caption="Приоритет" _id="priorityCombobox" :top="366px" :left="15px"></vaadin-combo-box>
+   <vaadin-button width="50%" plain-text _id="addRecipeButton" :top="416px" :left="151px">
+     Добавить 
+   </vaadin-button>
+   <vaadin-absolute-layout width="500px" height="81px" _id="doctorLayout" :top="37px" :left="15px">
+    <vaadin-label plain-text _id="doctorsFieldLabel" :top="0px" :left="215px">
+      ФИО Врача 
+    </vaadin-label>
+    <vaadin-text-field caption="Имя" width="165px" height="37px" _id="doctorNameField" :top="44px" :left="0px"></vaadin-text-field>
+    <vaadin-text-field caption="Фамилия" width="165px" _id="doctorSurnameField" :top="44px" :left="168px"></vaadin-text-field>
+    <vaadin-text-field caption="Отчетсво" width="165px" height="37px" _id="doctorPatronymicField" :top="44px" :left="335px"></vaadin-text-field>
+   </vaadin-absolute-layout>
+   <vaadin-absolute-layout height="78px" _id="patientLayout" :top="138px" :left="15px">
+    <vaadin-label height="24px" plain-text :top="0px" :left="188px">
+      ФИО Пациента 
+    </vaadin-label>
+    <vaadin-text-field caption="Имя" width="165px" height="37px" _id="patientNameField" :top="41px" :left="0px"></vaadin-text-field>
+    <vaadin-text-field caption="Фамилия" width="165px" _id="patientSurnameField" :top="41px" :left="168px"></vaadin-text-field>
+    <vaadin-text-field caption="Отчетсво" width="165px" height="37px" _id="patientPatronymicField" :top="41px" :left="335px"></vaadin-text-field>
+   </vaadin-absolute-layout>
+   <vaadin-text-field caption="Срок действия" width="312px" _id="deadlinesField" :top="366px" :left="203px"></vaadin-text-field>
+  </vaadin-absolute-layout>
+ </body>
+</html>
